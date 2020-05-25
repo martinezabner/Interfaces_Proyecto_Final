@@ -644,6 +644,7 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Label" translatable="yes">Efectivo</property>
+                <property name="Active">True</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>
@@ -661,7 +662,6 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Label" translatable="yes">Tarjeta</property>
-                <property name="Active">True</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>
@@ -880,9 +880,6 @@
                 </child>
               </widget>
             </child>
-            <child>
-              <placeholder />
-            </child>
           </widget>
           <packing>
             <property name="X">50</property>
@@ -901,20 +898,6 @@
           <packing>
             <property name="X">79</property>
             <property name="Y">707</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="button2">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="Type">TextAndIcon</property>
-            <property name="Icon">stock:gtk-cancel LargeToolbar</property>
-            <property name="Label">Cancelar</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">492</property>
-            <property name="Y">704</property>
           </packing>
         </child>
         <child>
@@ -977,13 +960,27 @@
           </packing>
         </child>
         <child>
+          <widget class="Gtk.Button" id="button2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextAndIcon</property>
+            <property name="Icon">stock:gtk-cancel LargeToolbar</property>
+            <property name="Label">Cancelar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">476</property>
+            <property name="Y">699</property>
+          </packing>
+        </child>
+        <child>
           <widget class="Gtk.Image" id="image4">
             <property name="MemberName" />
             <property name="Pixbuf">stock:stock_person Dnd</property>
           </widget>
           <packing>
-            <property name="X">265</property>
-            <property name="Y">14</property>
+            <property name="X">275</property>
+            <property name="Y">21</property>
           </packing>
         </child>
       </widget>
@@ -1064,26 +1061,6 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Image" id="image5">
-            <property name="MemberName" />
-            <property name="Pixbuf">stock:stock_person Dialog</property>
-          </widget>
-          <packing>
-            <property name="X">32</property>
-            <property name="Y">115</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Image" id="image6">
-            <property name="MemberName" />
-            <property name="Pixbuf">stock:stock_keyring Dialog</property>
-          </widget>
-          <packing>
-            <property name="X">268</property>
-            <property name="Y">116</property>
-          </packing>
-        </child>
-        <child>
           <widget class="Gtk.Entry" id="entry3">
             <property name="MemberName" />
             <property name="WidthRequest">130</property>
@@ -1111,16 +1088,6 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Image" id="image7">
-            <property name="MemberName" />
-            <property name="Pixbuf">stock:gtk-apply LargeToolbar</property>
-          </widget>
-          <packing>
-            <property name="X">81</property>
-            <property name="Y">210</property>
-          </packing>
-        </child>
-        <child>
           <widget class="Gtk.Button" id="button4">
             <property name="MemberName" />
             <property name="WidthRequest">150</property>
@@ -1135,16 +1102,6 @@
           </packing>
         </child>
         <child>
-          <widget class="Gtk.Image" id="image8">
-            <property name="MemberName" />
-            <property name="Pixbuf">stock:gtk-cancel LargeToolbar</property>
-          </widget>
-          <packing>
-            <property name="X">299</property>
-            <property name="Y">205</property>
-          </packing>
-        </child>
-        <child>
           <widget class="Gtk.Button" id="button5">
             <property name="MemberName" />
             <property name="WidthRequest">150</property>
@@ -1156,6 +1113,79 @@
           <packing>
             <property name="X">342</property>
             <property name="Y">199</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Image" id="image6">
+            <property name="MemberName" />
+            <property name="Pixbuf">stock:stock_keyring Dialog</property>
+          </widget>
+          <packing>
+            <property name="X">290</property>
+            <property name="Y">131</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Image" id="image8">
+            <property name="MemberName" />
+            <property name="Pixbuf">stock:gtk-cancel LargeToolbar</property>
+          </widget>
+          <packing>
+            <property name="X">303</property>
+            <property name="Y">207</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Image" id="image7">
+            <property name="MemberName" />
+            <property name="Pixbuf">stock:gtk-apply LargeToolbar</property>
+          </widget>
+          <packing>
+            <property name="X">74</property>
+            <property name="Y">211</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Image" id="image5">
+            <property name="MemberName" />
+            <property name="HeightRequest">0</property>
+            <property name="Xalign">1</property>
+            <property name="Pixbuf">stock:stock_person Dialog</property>
+          </widget>
+          <packing>
+            <property name="X">57</property>
+            <property name="Y">132</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Facturaciòn.Proveedores" design-size="494 308">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Proveedores</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.HSeparator" id="hseparator2">
+            <property name="MemberName" />
+            <property name="WidthRequest">450</property>
+          </widget>
+          <packing>
+            <property name="X">12</property>
+            <property name="Y">28</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Proveedores</property>
+          </widget>
+          <packing>
+            <property name="X">23</property>
+            <property name="Y">4</property>
           </packing>
         </child>
       </widget>
