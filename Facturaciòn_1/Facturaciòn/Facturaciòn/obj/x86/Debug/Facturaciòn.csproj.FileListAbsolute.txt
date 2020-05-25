@@ -1,0 +1,4 @@
+/home/alvaro/Descargas/Facturaciòn/Facturaciòn/obj/x86/Debug/Facturaciòn.csprojAssemblyReference.cache
+/home/alvaro/Descargas/Facturaciòn/Facturaciòn/obj/x86/Debug/Facturaciòn.csproj.CoreCompileInputs.cache
+/home/alvaro/Descargas/Facturaciòn_1/Facturaciòn/Facturaciòn/obj/x86/Debug/Facturaciòn.csprojAssemblyReference.cache
+/home/alvaro/Descargas/Facturaciòn_1/Facturaciòn/Facturaciòn/obj/x86/Debug/Facturaciòn.csproj.CoreCompileInputs.cache
