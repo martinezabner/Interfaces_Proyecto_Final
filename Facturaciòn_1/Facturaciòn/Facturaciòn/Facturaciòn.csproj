@@ -78,6 +78,17 @@
     <Compile Include="Properties\Conexion.cs" />
     <Compile Include="Proveedores.cs" />
     <Compile Include="gtk-gui\Facturaciòn.Proveedores.cs" />
+    <Compile Include="Empleados.cs" />
+    <Compile Include="gtk-gui\Facturaciòn.Empleados.cs" />
+    <Compile Include="Clientes.cs" />
+    <Compile Include="gtk-gui\Facturaciòn.Clientes.cs" />
+    <Compile Include="Sucursales.cs" />
+    <Compile Include="gtk-gui\Facturaciòn.Sucursales.cs" />
+    <Compile Include="Properties\Proveedores.cs" />
+    <Compile Include="ProductoTienda.cs" />
+    <Compile Include="gtk-gui\Facturaciòn.ProductoTienda.cs" />
+    <Compile Include="Productos.cs" />
+    <Compile Include="gtk-gui\Facturaciòn.Productos.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
